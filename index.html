@@ -7,6 +7,14 @@
         <!--This is metadata for our document-->
         <meta charset="UTF-8">
         <title>OpenSky 10 minute insights</title>
+        <style>
+            body {
+                background-image: url('Background_image.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
     
     <body>
@@ -16,9 +24,31 @@
                 <img src="https://opensky-network.org/images/logo.png" alt="OpenSky logo" style="background-color:black;padding:1px;">
             </a>
         </p>
-        <p>Departure airport (ICAO):</p>
-        <p>Arrival airport (ICAO):</p>
-        <p>Aircraft (ICAO24):</p>
+        <div>
+            <form>
+                <label for="depair">Departure airport (ICAO):</label>
+                <input type="text" id="depair" name="depair"> 
+                <input type="submit" value="Search">
+            </form>
+            <br>
+            <form>
+                <label for="arrair">Arrival airport (ICAO):</label>
+                <input type="text" id="arrair" name="arrair">
+                <input type="submit" value="Search">
+            </form>
+            <br>
+            <form>
+                <label for="aircrft">Aircraft (ICAO24 in hex):</label>
+                <input type="text" id="aircrft" name="aircrft">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <p>Data for the last 10 minutes:</p>
+
+        <div>
+
+        </div>
 
         <footer>
             <h2>Data citation</h2>
