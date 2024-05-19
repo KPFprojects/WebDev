@@ -32,8 +32,12 @@ h1{
 /* create a custom class element style */
 .customred {color:red;}
 
-/* set margin to none for input of text type */
-input[type="text"]{margin:none;}
+/* set margin and size of input fields */
+input[type="text"]{
+    margin:none;
+    width: 10vw;
+    height: auto;
+}
 
 /* set submit button text colour to purple */
 input[type="submit"]{color:purple}
@@ -45,8 +49,12 @@ input[type="submit"]{color:purple}
     background-color:yellow;
 }
 
-/* set background color of images to be black, and padding around images to be 1 pixel */
-a > img {background-color:black; padding:"1px";}
+/* set background color, logo and dimensions of logo */
+#reflogo {
+    height: auto;
+    width: 20vw;
+    background-color:black; 
+    padding:"1px";}
 
 /* set colour and style of first line of every paragraph within the footer */
 footer > p::first-line {
