@@ -7,60 +7,62 @@
         <!--This is metadata for our document-->
         <meta charset="UTF-8">
         <title>OpenSky 10 minute insights</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-            body {
-                background-image: url('Background_image.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+            body{
+                background-color: skyblue;
             }
         </style>
     </head>
     
     <body>
-        <h1>OpenSky 10 minute insights</h1>
-        <p>From The OpenSky Network:<br>
-            <a hreflang="en" target="_blank" href="https://opensky-network.org/">
-                <img src="https://opensky-network.org/images/logo.png" alt="OpenSky logo" style="background-color:black;padding:1px;">
-            </a>
-        </p>
-        <div>
-            <form>
-                <label for="depair">Departure airport (ICAO):</label>
-                <input type="text" id="depair" name="depair"> 
-                <input type="submit" value="Search">
-            </form>
-            <br>
-            <form>
-                <label for="arrair">Arrival airport (ICAO):</label>
-                <input type="text" id="arrair" name="arrair">
-                <input type="submit" value="Search">
-            </form>
-            <br>
-            <form>
-                <label for="aircrft">Aircraft (ICAO24 in hex):</label>
-                <input type="text" id="aircrft" name="aircrft">
-                <input type="submit" value="Search">
-            </form>
-        </div>
-
-        <p>Data for the last 10 minutes:</p>
-
-        <div>
-
-        </div>
-
-        <footer>
-            <h2>Data citation</h2>
-            <p>Matthias Schäfer, Martin Strohmeier, Vincent Lenders, Ivan Martinovic and Matthias Wilhelm.<br>
-            "Bringing Up OpenSky: A Large-scale ADS-B Sensor Network for Research".<br>
-            In Proceedings of the 13th IEEE/ACM International Symposium on Information Processing in Sensor Networks (IPSN), 
-            pages 83-94, April 2014.
-            </p>
-            <p>The OpenSky Network, 
-                <a hreflang="en" target="_blank" href="https://opensky-network.org/">https://opensky-network.org/
+        <div id="backgd">
+            <h1>OpenSky 10 minute insights</h1>
+            <p>From The OpenSky Network:<br>
+                <a hreflang="en" target="_blank" href="https://opensky-network.org/">
+                        <img src="https://opensky-network.org/images/logo.png" alt="OpenSky logo">
                 </a>
             </p>
-        </footer>
+            <div>
+                <form>
+                    <label for="depair">Departure airport (<span class="customred">ICAO</span> code):</label>
+                    <input type="text" id="depair" name="depair"> 
+                    <input class ="SubmitButton" type="submit" value="Search">
+                </form>
+                <br>
+                <form>
+                    <label for="arrair">Arrival airport (<span class="customred">ICAO</span> code):</label>
+                    <input type="text" id="arrair" name="arrair">
+                    <input class ="SubmitButton" type="submit" value="Search">
+                </form>
+                <br>
+                <form>
+                    <label for="aircrft">Aircraft (<span class="customred">ICAO24</span> code in hex):</label>
+                    <input type="text" id="aircrft" name="aircrft">
+                    <input class ="SubmitButton" type="submit" value="Search">
+                </form>
+            </div>
+            <div class="ResponseTitle">
+                <p>Data for the last 10 minutes:</p>
+            </div>
+            
+            <div>
+                <p>result box needs to be placed here</p>
+            </div>
+
+            <footer>
+                <h2>Data citation</h2>
+                <p>Matthias Schäfer, Martin Strohmeier, Vincent Lenders, Ivan Martinovic and Matthias Wilhelm.<br>
+                "Bringing Up OpenSky: A Large-scale ADS-B Sensor Network for Research".<br>
+                In Proceedings of the 13th IEEE/ACM International Symposium on Information Processing in Sensor Networks (IPSN), 
+                pages 83-94, April 2014.
+                </p>
+                <p>The OpenSky Network, 
+                    <a hreflang="en" target="_blank" href="https://opensky-network.org/">https://opensky-network.org/
+                    </a>
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
+<script src="flights.js"></script>

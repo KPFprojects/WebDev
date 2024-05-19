@@ -1,0 +1,69 @@
+/*
+Author: Konstantin
+*/
+
+/* font definitions for the whole document */
+:root {
+    --h1Fsize: 5vw;
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* set html body to be 100% of the viewport */
+html body{
+    height: 100%;
+    margin:0px;
+}
+
+/* set background image */
+#backgd{
+    background-image: url('Background_image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* set h1 colour and size */
+h1{
+    color:darkblue;
+    font-size: var(--h1Fsize);
+}
+
+/* create a custom class element style */
+.customred {color:red;}
+
+/* set margin to none for input of text type */
+input[type="text"]{margin:none;}
+
+/* set submit button text colour to purple */
+input[type="submit"]{color:purple}
+
+/* have text displayed when hovering over the submit button */
+.SubmitButton{cursor: pointer;}
+.SubmitButton:hover {
+    transition: 1s;
+    background-color:yellow;
+}
+
+/* set background color of images to be black, and padding around images to be 1 pixel */
+a > img {background-color:black; padding:"1px";}
+
+/* set colour and style of first line of every paragraph within the footer */
+footer > p::first-line {
+    color:grey;
+    font-style: italic;
+}
+
+/* set relative size of response title */ 
+.ResponseTitle {font-size: calc(var(--h1Fsize)/2);}
+
+/* transition delay */ 
+footer > p a:hover{
+    transition-delay: 2s;
+    background-color: lightgreen;
+}
+
+/* have container for results */
+#results-container{
+    display: none;
+}
